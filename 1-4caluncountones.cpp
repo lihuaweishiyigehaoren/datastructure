@@ -7,7 +7,7 @@ int countOnes1(unsigned int n)
     int ones = 0;
     while(n>0){
         ones += (n&1);
-        n>>1;// 右移一位
+        n = n>>1;// 右移一位
     }
     // cout<<ones<<endl;
     return ones;
@@ -31,7 +31,6 @@ int countoneslopti1(unsigned int n)
 }
 
 int main(){
-    cout<<"nishiwodeer";
     unsigned int testnum = 100;
     int result = countOnes1(testnum);
     cout<<result;
